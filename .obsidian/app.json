@@ -1,1 +1,7 @@
-{}
+{
+  "promptDelete": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Atomic Notes",
+  "attachmentFolderPath": "./attachments",
+  "alwaysUpdateLinks": true
+}

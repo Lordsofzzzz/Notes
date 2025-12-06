@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "626abff2c7fcaded",
+        "id": "e7900d32e3661e44",
         "type": "tabs",
         "children": [
           {
-            "id": "49ed2fd3cfaeb4a9",
+            "id": "182318cad1e6ce7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Atomic Notes/test git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "test git"
             }
           }
         ]
@@ -177,8 +181,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "49ed2fd3cfaeb4a9",
+  "active": "182318cad1e6ce7e",
   "lastOpenFiles": [
+    "Atomic Notes/test git.md",
+    "Untitled.md",
+    "Atomic Notes",
+    "Untitled/Untitled",
     "New Text Document.txt"
   ]
 }

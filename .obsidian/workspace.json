@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Notes/Linux GUI & OS Layers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux GUI & OS Layers"
-            }
-          },
-          {
-            "id": "ef8be26994c16b65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Atomic Notes/DevOps Engineering Exam Preparation.md",
                 "mode": "source",
                 "source": false
@@ -35,8 +21,7 @@
               "title": "DevOps Engineering Exam Preparation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Atomic Notes/DevOps Engineering Exam Preparation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from DevOps Engineering Exam Preparation"
             }
           },
           {
@@ -169,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Atomic Notes/DevOps Engineering Exam Preparation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of DevOps Engineering Exam Preparation"
             }
           },
           {
@@ -188,11 +175,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,12 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9cf2fd1fcda89e4b",
+  "active": "72757e7da3a90fe5",
   "lastOpenFiles": [
-    "Atomic Notes/Linux GUI & OS Layers.md",
-    "Atomic Notes/Untitled.md",
-    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Linux Architecture – Core Notes.md",
+    "Atomic Notes/Linux GUI & OS Layers.md",
+    "Atomic Notes/DevOps Engineering Exam Preparation.md",
+    "Atomic Notes/Untitled.base",
+    "Atomic Notes/Untitled.md",
     "Atomic Notes/new auto commit test.md",
     "Atomic Notes/test git.md",
     "Untitled",

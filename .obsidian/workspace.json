@@ -4,49 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "e6d4d7296afa1dd0",
+        "id": "58a1c84f2fa46c84",
         "type": "tabs",
         "children": [
           {
-            "id": "6343cc7af820fe6a",
+            "id": "72757e7da3a90fe5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Notes/test git.md",
+                "file": "Atomic Notes/Linux GUI & OS Layers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test git"
+              "title": "Linux GUI & OS Layers"
             }
           },
           {
-            "id": "36e6858805568881",
+            "id": "ef8be26994c16b65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Notes/test git.md",
+                "file": "Atomic Notes/Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test git"
-            }
-          },
-          {
-            "id": "9bb979a1b88e82f5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled 1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,10 +196,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9bb979a1b88e82f5",
+  "active": "ef8be26994c16b65",
   "lastOpenFiles": [
-    "Atomic Notes/test git.md",
+    "Atomic Notes/Linux GUI & OS Layers.md",
+    "Atomic Notes/Untitled 1.md",
+    "Atomic Notes/Linux Architecture – Core Notes.md",
     "Atomic Notes/new auto commit test.md",
+    "Atomic Notes/Untitled.md",
+    "Atomic Notes/test git.md",
     "Untitled",
     "Untitled.md",
     "Atomic Notes",

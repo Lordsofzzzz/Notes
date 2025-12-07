@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Notes/Linux Architecture – Core Notes.md",
+                "file": "Atomic Notes/Linux GUI & OS Layers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Architecture – Core Notes"
+              "title": "Linux GUI & OS Layers"
             }
           }
         ]
@@ -196,8 +196,8 @@
   },
   "active": "ce335ff6be043093",
   "lastOpenFiles": [
-    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Linux Architecture – Core Notes.md",
+    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Linux GUI & OS Layers.md",
     "Atomic Notes/Untitled.base",
     "Atomic Notes/Untitled.md",

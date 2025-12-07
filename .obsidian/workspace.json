@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "58a1c84f2fa46c84",
+        "id": "b5daba51093678b1",
         "type": "tabs",
         "children": [
           {
-            "id": "72757e7da3a90fe5",
+            "id": "ce335ff6be043093",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Atomic Notes/DevOps Engineering Exam Preparation.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DevOps Engineering Exam Preparation"
+              "title": "New tab"
             }
           }
         ]
@@ -193,11 +189,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "72757e7da3a90fe5",
+  "active": "ce335ff6be043093",
   "lastOpenFiles": [
+    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Linux Architecture – Core Notes.md",
     "Atomic Notes/Linux GUI & OS Layers.md",
-    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Untitled.base",
     "Atomic Notes/Untitled.md",
     "Atomic Notes/new auto commit test.md",

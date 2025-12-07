@@ -1,0 +1,339 @@
+
+## Section 1: DevOps Principles & Git
+
+### 1. Define DevOps and explain how its core principles enhance collaboration and automation
+
+**DevOps** is a set of practices, tools, and a cultural philosophy that automates and integrates processes between software development and IT operations teams.
+
+* **Collaboration:** Removes silos by promoting shared responsibility for the product lifecycle.
+* **Automation:** Replaces manual tasks like testing and deployment, reducing errors and increasing delivery speed.
+
+### 2. Git Workflow: Three developers modifying the same file
+
+**a) Create a feature branch**
+
+```
+git checkout -b feature/new-module
+```
+
+**b) Fetch and pull latest changes**
+
+```
+git fetch origin
+git pull origin main
+```
+
+**c) Resolve merge conflicts**
+
+* Open conflicted file and check markers
+
+```
+<<<<<<<
+```
+
+* Edit and save the file
+
+```
+git add <filename>
+```
+
+**d) Push merged code**
+
+```
+git commit -m "Resolved merge conflicts"
+git push origin feature/new-module
+```
+
+### 3. Containerization Workflow
+
+1. **Build**
+2. **Ship**
+3. **Run**
+
+### 4. Docker Build, Tag, Push
+
+```
+docker build -t myapp:latest .
+docker tag myapp:latest myuser/myapp:v1
+docker push myuser/myapp:v1
+```
+
+### 5. CI/CD Pipeline Stages
+
+Source → Build → Test → Deploy
+
+### 6. Jenkins Declarative Pipeline
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps { sh 'mvn clean package' }
+        }
+        stage('Test') {
+            steps { sh 'mvn test' }
+        }
+        stage('Deploy') {
+            steps { echo 'Deploying application...' }
+        }
+    }
+}
+```
+
+### 7. Maven & Selenium Integration
+
+* Jenkins builds using Maven
+* Selenium tests validate the UI automatically
+
+## Section 2: Kubernetes (K8s) Architecture & Deployment
+
+### 8. Kubernetes Cluster Architecture
+
+* **Control Plane:** API Server, Scheduler, etcd
+* **Worker Nodes:** Kubelet, Kube-proxy, Pods
+
+### 9. Rolling Updates & Rollbacks
+
+```
+kubectl rollout undo deployment/web-app
+```
+
+### 10. Kubernetes Deployment + Service YAML
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+spec:
+  selector:
+    app: web
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+```
+
+## Section 3: Monitoring & Logging
+
+### 11. ELK Stack
+
+* Beats → Collect logs
+* Logstash → Parse & filter
+* Elasticsearch → Store
+* Kibana → Visualize
+
+### 12. Prometheus vs Nagios
+
+* **Prometheus:** Pull-based
+* **Nagios:** Agent-based
+
+### 13. Grafana Dashboard
+
+PromQL example:
+
+```
+rate(node_cpu_seconds_total[5m])
+```
+
+### 14. DevOps Principles (CAMS)
+
+* Culture
+* Automation
+* Measurement
+* Sharing
+
+## Section 4: General Commands & Concepts
+
+### 15. Git Commands
+
+```
+git stash
+git stash pop
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+```
+
+### 16. Docker Architecture
+
+Client → Daemon → Host → Registry
+
+### 17. Docker Compose
+
+```
+version: '3.8'
+services:
+  web:
+    image: my-web-app:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: secretpassword
+```
+
+## Section 5: Additional DevOps & Kubernetes Topics (Q18–Q39)
+
+### 18. CI/CD Stages (Extended Explanation)
+
+A CI/CD pipeline includes the following stages:
+
+* **Source:** Code commit triggers the pipeline.
+* **Build:** Compile the code and create build artifacts.
+* **Test:** Unit, integration, and automation tests.
+* **Deploy:** Push to staging or production.
+
+### 19. Freestyle Jenkins Job Steps for Java Application
+
+1. Configure SCM (Git URL)
+2. Set Build Trigger (Webhook / Poll SCM)
+3. Add Build Step: Maven → `clean package`
+4. Post-build Action: Archive `.jar` / `.war` file
+
+### 20. Maven & Selenium Integration
+
+* Jenkins triggers Maven build.
+* After successful build, Selenium tests run using a headless browser environment.
+* Ensures UI flows (login, navigation) work correctly.
+
+### 21. Kubernetes Service Types
+
+* **ClusterIP:** Internal cluster access.
+* **NodePort:** Exposes service on every node.
+* **LoadBalancer:** Uses cloud provider LB for external traffic.
+
+### 22. Kubernetes Autoscaling (HPA)
+
+HPA scales pods based on CPU/Memory thresholds.
+Example:
+
+* Scale up when CPU > 70%
+* Scale down when CPU < 30%
+
+### 23. Helm Chart Folder Structure
+
+* `Chart.yaml` → Metadata
+* `values.yaml` → Configurable values
+* `templates/` → YAML templates
+
+### 24. ELK Stack Working (Summary)
+
+Beats → Logstash → Elasticsearch → Kibana (Dashboard)
+
+### 25. Log Management Challenges & ELK
+
+* Logs are distributed in microservices architecture.
+* ELK centralizes logs to trace a request across services.
+
+### 26. Nagios Alert Configuration
+
+Example CPU Alert:
+
+```
+check_command check_nrpe!check_cpu!85!90
+```
+
+* 85% → Warning
+* 90% → Critical
+
+### 27. GitFlow vs Feature Branch Workflow
+
+* **GitFlow:** release-driven, multiple branches.
+* **Feature Branch:** simplified, ideal for continuous delivery.
+
+### 28. Git Compare, Rebase, Merge
+
+* Compare branches:
+
+```
+git diff branchA..branchB
+```
+
+* Rebase:
+
+```
+git rebase main
+```
+
+* Merge:
+
+```
+git merge feature
+```
+
+### 29. Docker Images vs Containers vs Layers
+
+* **Image:** Template
+* **Container:** Running instance
+* **Layers:** Each Dockerfile instruction
+* **Registry:** Stores images
+
+### 30. Flask App Containerization
+
+```
+docker build -t flask-app .
+docker run -d -p 5000:5000 --name web flask-app
+docker stop web && docker rm web
+```
+
+### 31. Jenkins Pipelines: Declarative vs Scripted
+
+* Declarative = simple and structured
+* Scripted = powerful, complex logic
+
+### 32. Jenkins Pipeline Script
+
+(Already covered in Q6)
+
+### 33. SCM Integration with Jenkins
+
+GitHub Webhook triggers pipeline on every push.
+
+### 34. Kubernetes Architecture
+
+(Identical to Q8)
+
+### 35. Kubernetes Rolling Updates
+
+Rolling update ensures zero downtime updates.
+
+### 36. Kubernetes Deployment YAML
+
+Covered in Q10.
+
+### 37. ELK Stack Working
+
+Covered in Q11.
+
+### 38. Prometheus vs Nagios
+
+Covered in Q12.
+
+### 39. Prometheus + Grafana Memory Alert Rule
+
+```
+node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes * 100 < 10
+```

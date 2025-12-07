@@ -4,5 +4,6 @@
   "newFileFolderPath": "Atomic Notes",
   "attachmentFolderPath": "./attachments",
   "alwaysUpdateLinks": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "trashOption": "local"
 }

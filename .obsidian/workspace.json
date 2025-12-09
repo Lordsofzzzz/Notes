@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Notes/DevOps Engineering Exam Preparation.md",
-                "mode": "source",
+                "file": "Atomic Notes/Linux Architecture – Core Notes.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DevOps Engineering Exam Preparation"
+              "title": "Linux Architecture – Core Notes"
             }
           }
         ]
@@ -179,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,9 +196,9 @@
   },
   "active": "a3825e34123e76b8",
   "lastOpenFiles": [
+    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Linux GUI & OS Layers.md",
     "Atomic Notes/Linux Architecture – Core Notes.md",
-    "Atomic Notes/DevOps Engineering Exam Preparation.md",
     "Atomic Notes/Untitled.md",
     "Atomic Notes/Untitled.base",
     "Atomic Notes/new auto commit test.md",

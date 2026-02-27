@@ -1,4 +1,4 @@
-
+![[]]
 This document explains the graphical stack and user interface layers in Linux, including Display Servers, Window Managers, Desktop Environments, and Display Managers.
 
 ---

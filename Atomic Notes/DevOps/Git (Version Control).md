@@ -40,4 +40,4 @@ Git is the foundation of modern software development and CI/CD pipelines. This n
 - [[Docker and Containerization]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

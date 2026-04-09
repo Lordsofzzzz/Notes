@@ -17,7 +17,7 @@ Systems for monitoring and alerting in IT infrastructure.
 - **Prometheus**: A modern, pull-based monitoring system.
   - **Pull Model**: Scrapes metrics from targets at regular intervals.
   - **Alerting**: Uses `node_cpu_seconds_total` and PromQL for defining thresholds.
-  - **Visualization**: Best used with [[Grafana]].
+  - **Visualization**: Best used with [[Grafana (Visualization)]].
 - **Nagios**: An older, agent-based monitoring system.
   - **Agent-based**: Uses specialized agents (e.g., NRPE) to report status.
   - **Checks**: Executable commands for status (e.g., `check_nrpe!check_cpu!85!90`).
@@ -35,4 +35,4 @@ Monitoring is the eyes and ears of any production environment. This note documen
 - [[ELK Stack (Logging)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

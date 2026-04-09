@@ -1,14 +1,18 @@
 # Index
 
 ## Security
+- [[Web Application Security (MOC)]] — Central methodology and tactical map for web application security.
 - [[Red Team Operational Security (OpSec)]] — Protecting red team activities from detection and attribution.
 - [[C2 Infrastructure Hosting (Red Team)]] — Architecture and security of Command and Control servers.
 - [[VPN and Proxy Setup (Red Team)]] — Multi-layered routing for red team anonymity.
-- [[Red Team Methodology (Web Application)]] — Structured phases of a web application security assessment.
 - [[WAF Bypass Techniques]] — Methods for evading Web Application Firewalls.
 - [[API Endpoint Testing]] — Discovery and security testing of API interfaces.
 - [[CORS (Cross-Origin Resource Sharing)]] — Browser mechanism for relaxing Same-Origin Policy.
-- [[Web Application Security (MOC)]] — Map of content for web security topics.
+- [[Red Team Tools]] — Essential toolkit for assessments.
+- [[Step-by-Step Web App Red Teaming]] — Phased guide for assessments.
+- [[Parameters in API Enumeration]] — Discovering undocumented inputs.
+- [[What Leads to API Vulnerabilities]] — Root causes of API security flaws.
+- [[How to Know if an API Has Authentication]] — Fingerprinting auth layers.
 
 ## DevOps
 - [[DevOps Engineering (MOC)]] — Practices and tools for integrating development and operations.
@@ -44,25 +48,9 @@
 - (No notes yet)
 
 ## Recent Updates
-- [[Red Team Operational Security (OpSec)]] — 2026-04-10
-- [[C2 Infrastructure Hosting (Red Team)]] — 2026-04-10
-- [[VPN and Proxy Setup (Red Team)]] — 2026-04-10
-- [[Red Team Methodology (Web Application)]] — 2026-04-10
-- [[WAF Bypass Techniques]] — 2026-04-10
-- [[API Endpoint Testing]] — 2026-04-10
-- [[CORS (Cross-Origin Resource Sharing)]] — 2026-04-10
 - [[Web Application Security (MOC)]] — 2026-04-10
-- [[DevOps Engineering (MOC)]] — 2026-04-10
-- [[Docker and Containerization]] — 2026-04-10
-- [[Kubernetes (K8s) Architecture]] — 2026-04-10
-- [[ELK Stack (Logging)]] — 2026-04-10
-- [[Prometheus and Nagios (Monitoring)]] — 2026-04-10
-- [[Grafana (Visualization)]] — 2026-04-10
-- [[Jenkins (CI and CD)]] — 2026-04-10
-- [[Git (Version Control)]] — 2026-04-10
-- [[Linux Systems (MOC)]] — 2026-04-10
-- [[Linux Architecture (Core)]] — 2026-04-10
-- [[Linux Boot Process]] — 2026-04-10
-- [[systemd (Service Control)]] — 2026-04-10
-- [[Linux Filesystem Hierarchy]] — 2026-04-10
-- [[Linux GUI and OS Layers]] — 2026-04-10
+- [[Red Team Tools]] — 2026-04-10
+- [[Step-by-Step Web App Red Teaming]] — 2026-04-10
+- [[Parameters in API Enumeration]] — 2026-04-10
+- [[What Leads to API Vulnerabilities]] — 2026-04-10
+- [[How to Know if an API Has Authentication]] — 2026-04-10

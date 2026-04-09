@@ -26,13 +26,13 @@ Set of practices, tools, and a cultural philosophy that automates and integrates
 - **Deploy**: Pushing artifacts to staging or production.
 
 ### Technology Stack
-- **SCM**: [[Git]] (Workflows, branches, conflict resolution).
-- **CI/CD**: [[Jenkins]] (Declarative pipelines, webhooks).
-- **Containerization**: [[Docker]] (Build, Tag, Push, Compose).
-- **Orchestration**: [[Kubernetes]] (Deployments, Services, Autoscaling).
-- **Monitoring**: [[Prometheus and Nagios]] (Pull-based vs Agent-based).
-- **Logging**: [[ELK Stack]] (Beats, Logstash, Elasticsearch, Kibana).
-- **Visualization**: [[Grafana]] (PromQL dashboards).
+- **SCM**: [[Git (Version Control)]] (Workflows, branches, conflict resolution).
+- **CI/CD**: [[Jenkins (CI and CD)]] (Declarative pipelines, webhooks).
+- **Containerization**: [[Docker and Containerization]] (Build, Tag, Push, Compose).
+- **Orchestration**: [[Kubernetes (K8s) Architecture]] (Deployments, Services, Autoscaling).
+- **Monitoring**: [[Prometheus and Nagios (Monitoring)]] (Pull-based vs Agent-based).
+- **Logging**: [[ELK Stack (Logging)]] (Beats, Logstash, Elasticsearch, Kibana).
+- **Visualization**: [[Grafana (Visualization)]] (PromQL dashboards).
 
 ## Associative Trails
 This Map of Content serves as the top-level index for all DevOps notes in the vault. It refines the [[Linux Systems (MOC)]] by adding higher-level automation and collaboration concepts, challenging the traditional siloed approach to software delivery.
@@ -47,4 +47,4 @@ This Map of Content serves as the top-level index for all DevOps notes in the va
 - [[Prometheus and Nagios (Monitoring)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

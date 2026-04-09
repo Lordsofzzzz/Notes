@@ -38,12 +38,12 @@ Identify the WAF vendor using `wafw00f`, response headers, and error pages. Find
 - **wafw00f**: Fingerprinting the vendor.
 
 ## Associative Trails
-Bypassing perimeter defense is the first step in most modern web engagements. This note exists to centralize bypass strategies and challenges the assumption that a WAF provides foolproof security. It refines the broader [[Red Team Methodology (Web Application)]].
+Bypassing perimeter defense is the first step in most modern web engagements. This note exists to centralize bypass strategies and challenges the assumption that a WAF provides foolproof security. It refines the broader [[Web Application Security (MOC)]].
 
 ## Connections
-- [[Red Team Methodology (Web Application)]]
+- [[Web Application Security (MOC)]]
 - [[Web Application Security (MOC)]]
 
 ## Sources
-- [[redteam-complete-guide.md]]
-- [[WAF Bypass Techniques.md]]
+- redteam-complete-guide.md
+- WAF Bypass Techniques.md

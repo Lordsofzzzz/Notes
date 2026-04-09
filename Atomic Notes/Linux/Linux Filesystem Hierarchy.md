@@ -34,4 +34,4 @@ A standardized map for navigating and managing any Linux distribution. This note
 - [[Linux Boot Process]]
 
 ## Sources
-- [[Linux Architecture – Core Notes.md]]
+- Linux Architecture – Core Notes.md

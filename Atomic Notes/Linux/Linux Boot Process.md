@@ -33,4 +33,4 @@ Crucial for troubleshooting non-booting systems and understanding system startup
 - [[systemd (Service Control)]]
 
 ## Sources
-- [[Linux Architecture – Core Notes.md]]
+- Linux Architecture – Core Notes.md

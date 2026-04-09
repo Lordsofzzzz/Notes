@@ -49,4 +49,4 @@ Containerization solves the "it works on my machine" problem in the DevOps workf
 - [[Jenkins (CI and CD)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

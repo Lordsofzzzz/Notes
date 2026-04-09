@@ -33,4 +33,4 @@ Transforms raw metrics into actionable visual intelligence for DevOps teams. Thi
 - [[ELK Stack (Logging)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

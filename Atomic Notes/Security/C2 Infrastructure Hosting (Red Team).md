@@ -56,4 +56,4 @@ Infrastructure is the most vulnerable part of an operation to discovery; stealth
 - [[Red Team Operational Security (OpSec)]]
 
 ## Sources
-- [[redteam_conversation (1).md]]
+- redteam_conversation (1).md

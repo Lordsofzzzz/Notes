@@ -48,9 +48,9 @@ API Testing focuses on identifying and exploiting vulnerabilities in REST, Graph
 APIs are the backbone of modern web apps and a primary attack surface for data breaches. This note exists to centralize discovery and exploitation techniques, challenging the common assumption that internal APIs don't need robust authentication.
 
 ## Connections
-- [[Red Team Methodology (Web Application)]]
+- [[Web Application Security (MOC)]]
 - [[Web Application Security (MOC)]]
 
 ## Sources
-- [[redteam-complete-guide.md]]
-- [[API Endpoint Testing.md]]
+- redteam-complete-guide.md
+- API Endpoint Testing.md

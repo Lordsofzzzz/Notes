@@ -50,4 +50,4 @@ Jenkins provides the "glue" for automating the entire software lifecycle. This n
 - [[Kubernetes (K8s) Architecture]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

@@ -34,4 +34,4 @@ The most important process in a modern Linux system, managing the entire service
 - [[Linux Systems (MOC)]]
 
 ## Sources
-- [[Linux Architecture – Core Notes.md]]
+- Linux Architecture – Core Notes.md

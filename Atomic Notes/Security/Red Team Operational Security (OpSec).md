@@ -40,7 +40,7 @@ High-end red teaming is as much about stealth as it is about exploitation. This 
 ## Connections
 - [[VPN and Proxy Setup (Red Team)]]
 - [[C2 Infrastructure Hosting (Red Team)]]
-- [[Red Team Methodology (Web Application)]]
+- [[Web Application Security (MOC)]]
 
 ## Sources
-- [[redteam_conversation (1).md]]
+- redteam_conversation (1).md

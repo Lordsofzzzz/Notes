@@ -33,4 +33,4 @@ This note serves as the primary index for all Linux system-level notes. It provi
 - [[Linux GUI and OS Layers]]
 
 ## Sources
-- [[Linux Systems.md]]
+- Linux Systems.md

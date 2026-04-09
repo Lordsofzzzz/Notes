@@ -69,4 +69,4 @@ K8s is the industry standard for managing containerized applications at scale. T
 - [[Jenkins (CI and CD)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

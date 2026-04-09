@@ -46,4 +46,4 @@ Explains how Linux handles graphical output, from raw hardware to polished deskt
 - [[Linux Systems (MOC)]]
 
 ## Sources
-- [[Linux GUI & OS Layers.md]]
+- Linux GUI & OS Layers.md

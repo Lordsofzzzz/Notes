@@ -44,9 +44,9 @@ An attacker can host a malicious site that uses the victim's session to steal da
 CORS was designed for sharing, but its misconfiguration is a top-tier vulnerability for cross-site data theft. This note refines the understanding of Same-Origin Policy (SOP) and clarifies that CORS is enforced by the client browser, not the server.
 
 ## Connections
-- [[Red Team Methodology (Web Application)]]
+- [[Web Application Security (MOC)]]
 - [[Web Application Security (MOC)]]
 
 ## Sources
-- [[redteam-complete-guide.md]]
-- [[CORS (Cross origin resource sharing).md]]
+- redteam-complete-guide.md
+- CORS (Cross origin resource sharing).md

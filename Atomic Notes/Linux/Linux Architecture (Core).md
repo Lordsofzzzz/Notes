@@ -48,4 +48,4 @@ Understanding the core layers is crucial for system administration and high-perf
 - [[Linux Filesystem Hierarchy]]
 
 ## Sources
-- [[Linux Architecture – Core Notes.md]]
+- Linux Architecture – Core Notes.md

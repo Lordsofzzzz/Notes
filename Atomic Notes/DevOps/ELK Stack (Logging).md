@@ -38,4 +38,4 @@ Essential for understanding system health and debugging distributed applications
 - [[Grafana (Visualization)]]
 
 ## Sources
-- [[DevOps Engineering Exam Preparation.md]]
+- DevOps Engineering Exam Preparation.md

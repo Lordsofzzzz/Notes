@@ -77,7 +77,7 @@ Link to existing notes where it genuinely adds context. Never create a note just
 
 ### 2. Cross-Referencing
 
-Link concepts using Obsidian-style wikilinks: `[[Concept Name]]`. Only link to notes that already exist in the vault. If a concept doesn't exist yet, leave it unlinked — Lint will surface it later. Prefer linking over repeating information.
+Link concepts using Obsidian-style wikilinks: `[[Concept Name]]`. **STRICT RULE:** Only link to notes that already exist in the `/Atomic Notes` directory. If a concept doesn't exist yet, leave it as **plain text**. DO NOT create wikilinks for non-existent notes (no placeholders/red links). Prefer linking over repeating information.
 
 ---
 
@@ -141,7 +141,7 @@ Keep `index.md` as a clean, structured catalog organized by domain:
 
 ### 5. Logging
 
-After every operation, append one line to `/Logs/log.md`:
+After every operation, append one line to `/Logs/log.md`. DO NOT use wikilinks in logs; use plain text for targets:
 
 ```
 [YYYY-MM-DD] action | target
@@ -150,7 +150,7 @@ After every operation, append one line to `/Logs/log.md`:
 Examples:
 ```
 [2026-04-10] ingest | xss-notes.txt
-[2026-04-10] update | [[XSS]]
+[2026-04-10] update | XSS
 [2026-04-10] lint | vault
 ```
 

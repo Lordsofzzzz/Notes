@@ -50,4 +50,4 @@ Anonymity is not a single tool but a multi-layered architectural approach. This 
 - [[C2 Infrastructure Hosting (Red Team)]]
 
 ## Sources
-- [[redteam_conversation (1).md]]
+- redteam_conversation (1).md

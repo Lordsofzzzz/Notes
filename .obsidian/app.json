@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "promptDelete": true,
+=======
+  "promptDelete": false,
+>>>>>>> 9c28ab0 (initial commit)
   "newFileLocation": "folder",
   "newFileFolderPath": "Atomic Notes",
   "attachmentFolderPath": "./attachments",

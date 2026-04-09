@@ -4,21 +4,38 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "887d985a7c377fac",
         "type": "tabs",
         "children": [
           {
             "id": "a3825e34123e76b8",
+=======
+        "id": "c5bb54c8595e29f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21125f62c1fe961e",
+>>>>>>> 9c28ab0 (initial commit)
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Atomic Notes/Linux Architecture – Core Notes.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Linux Architecture – Core Notes"
+=======
+                "file": "Atomic Notes/Linux/systemd (Service Control).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "systemd (Service Control)"
+>>>>>>> 9c28ab0 (initial commit)
             }
           }
         ]
@@ -163,6 +180,7 @@
               "icon": "lucide-list",
               "title": "Outline of DevOps Engineering Exam Preparation"
             }
+<<<<<<< HEAD
           },
           {
             "id": "cbb3220936c77f82",
@@ -176,6 +194,11 @@
           }
         ],
         "currentTab": 5
+=======
+          }
+        ],
+        "currentTab": 4
+>>>>>>> 9c28ab0 (initial commit)
       }
     ],
     "direction": "horizontal",
@@ -190,6 +213,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+<<<<<<< HEAD
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
@@ -205,6 +229,43 @@
     "Atomic Notes/test git.md",
     "Untitled",
     "Untitled.md",
+=======
+      "bases:Create new base": false
+    }
+  },
+  "active": "21125f62c1fe961e",
+  "lastOpenFiles": [
+    "Atomic Notes/Linux/Linux GUI and OS Layers.md",
+    "Atomic Notes/Linux/Linux Boot Process.md",
+    "SCHEMA.md",
+    "Atomic Notes/Security/Red Team Methodology (Web Application).md",
+    "Atomic Notes/Security/C2 Infrastructure Hosting (Red Team).md",
+    "Atomic Notes/Security/API Endpoint Testing.md",
+    "Atomic Notes/Linux/Linux Systems (MOC).md",
+    "Atomic Notes/Linux/Linux Filesystem Hierarchy.md",
+    "Atomic Notes/Linux/Linux Architecture (Core).md",
+    "Atomic Notes/DevOps/Prometheus and Nagios (Monitoring).md",
+    "Atomic Notes/DevOps/Kubernetes (K8s) Architecture.md",
+    "Atomic Notes/DevOps/Jenkins (CI and CD).md",
+    "Atomic Notes/DevOps/Grafana (Visualization).md",
+    "Atomic Notes/DevOps/Git (Version Control).md",
+    "Atomic Notes/DevOps/ELK Stack (Logging).md",
+    "Atomic Notes/DevOps/DevOps Engineering (MOC).md",
+    "Logs/log.md",
+    "Raw/API Endpoint Testing.md",
+    "Raw/WAF Bypass Techniques.md",
+    "Raw/Web Application Security.md",
+    "Atomic notes/Web Application Security (MOC).md",
+    "Atomic notes/WAF Bypass Techniques.md",
+    "Atomic notes/systemd (Service Control).md",
+    "Atomic notes/Linux Systems (MOC).md",
+    "Atomic notes/C2 Infrastructure Hosting (Red Team).md",
+    "Atomic notes/DevOps Engineering (MOC).md",
+    "30 Archive/Untitled 2.base",
+    "30 Archive/Untitled.base",
+    "Atomic Notes/Untitled.base",
+    "Untitled",
+>>>>>>> 9c28ab0 (initial commit)
     "Atomic Notes",
     "Untitled/Untitled",
     "New Text Document.txt"

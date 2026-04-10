@@ -14,10 +14,12 @@ The sequence of stages a Linux system undergoes from power-on to the user login 
 Sequence from power-on to user login.
 
 ### Stages of the Boot Process
-1. **Hardware / Firmware (BIOS/UEFI)**: Initializes hardware components (POST).
-2. **Bootloader (GRUB)**: Loads the kernel and `initramfs` (initial RAM filesystem) into memory.
-3. **Kernel**: Detects hardware and mounts the root filesystem (`/`).
-4. **Init System (systemd)**: The first process (PID 1) that starts system services and the user environment.
+| Stage | Description |
+| :--- | :--- |
+| **BIOS / UEFI** | Hardware / Firmware: Initializes hardware components (POST). |
+| **GRUB** | Bootloader: Loads the kernel and `initramfs` (initial RAM filesystem) into memory. |
+| **Kernel** | Core OS: Detects hardware, mounts the root filesystem (`/`), and initializes devices. |
+| **systemd (PID 1)** | Init System: The first process that starts system services and the user environment. |
 
 ### Execution Flow
 ```

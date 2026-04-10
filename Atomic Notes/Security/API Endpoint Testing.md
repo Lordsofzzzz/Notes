@@ -8,48 +8,81 @@ updated: 2026-04-10
 # API Endpoint Testing
 
 ## Summary
-The process of discovering, mapping, and testing API endpoints for security vulnerabilities.
+The systematic process of discovering, mapping, and testing API endpoints for security vulnerabilities using a phased methodology.
 
 ## Details
-API Testing focuses on identifying and exploiting vulnerabilities in REST, GraphQL, or other web service interfaces.
+API Testing requires a structured approach to uncover hidden interfaces and exploit authorization or logic flaws.
 
-### API Discovery
-- **Crawl JS files**: Using `katana` or `linkfinder` to extract hidden endpoints.
-- **Brute force**: Fuzzing with `ffuf` or `gobuster` for common paths (`/swagger.json`, `/v1/users`).
-- **History**: Using `waybackurls` or `gau` to find old/deprecated versions.
+### Phase 1: API Discovery
+- **Crawl JS files**: Use `katana -u <url> -jc` or `linkfinder` to extract endpoints from frontend code.
+- **Brute Force**: Fuzz common paths (`/swagger.json`, `/api-docs`, `/v1/users`) using `ffuf` or `gobuster`.
+- **Historical Analysis**: Use `waybackurls` or `gau` to identify deprecated/vulnerable API versions.
 
-### Common API Vulnerabilities
-- **BOLA/IDOR (Broken Object Level Authorization)**: Accessing resources of other users by changing an ID.
-- **Mass Assignment**: Over-assigning fields (e.g., sending `"role": "admin"`).
-- **Broken Auth**: Bypassing authentication on old API versions or algorithm confusion for JWTs.
-- **No Rate Limiting**: Allowing brute-force attacks on login or sensitive endpoints.
-- **BFLA (Broken Function Level Authorization)**: Accessing administrative functions with lower-level privileges.
+### Phase 2: API Versioning Attacks
+Test every version string (`v0`, `v1`, `v2`, `beta`, `dev`, `test`, `internal`, `old`) to find forgotten security controls.
 
-### Testing Steps
-1. **Map Auth**: Check which endpoints require authentication.
-2. **Version Fuzzing**: Check `v1`, `v2`, `v0`, `beta`, `dev` versions for forgotten security controls.
-3. **HTTP Method Fuzzing**: Try `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `OPTIONS`, `TRACE` on every endpoint.
-4. **Parameter Fuzzing**: Use `arjun` or `Param Miner` to find hidden parameters like `?debug=true` or `?admin=true`.
+```bash
+for v in v0 v1 v2 v3 v4 beta dev test internal old; do
+  curl -s -o /dev/null -w "%{http_code} /api/$v/users\n" \
+  https://target.com/api/$v/users
+done
+```
+*Note: Older versions often lack current auth requirements or rate limiting.*
 
-### Tools
-- **Postman**: Manual testing.
-- **Kiterunner**: Fast route discovery.
-- **Arjun**: Hidden parameter discovery.
-- **jwt_tool**: JWT manipulation.
-- **Dalfox**: XSS scanning on API endpoints.
-- **sqlmap**: SQL injection testing.
+### Phase 3: HTTP Method Testing
+Verify if restricted actions are accessible via alternative methods or overrides.
+```bash
+# Test all methods
+for method in GET POST PUT PATCH DELETE OPTIONS HEAD TRACE; do
+  echo -n "$method /api/users: "
+  curl -s -o /dev/null -w "%{http_code}\n" \
+       -X $method https://target.com/api/users \
+       -H "Authorization: Bearer <token>"
+done
+```
+- **TRACE Method**: `curl -X TRACE <url> -H "Cookie: session=..."` to see if the server reflects session cookies.
+- **Method Override**: If `DELETE` is blocked, try `POST /api/user/123` with `X-HTTP-Method-Override: DELETE`.
 
-### Advanced API Attacks
-- **GraphQL Introspection**: Extracting the full schema if introspection is enabled.
-- **SSRF via Webhooks**: Using callback URLs to probe internal networks or cloud metadata.
-- **Race Conditions**: Sending simultaneous requests to bypass logic (e.g., double spending).
+### Phase 4: Authentication & Authorization (BOLA/IDOR)
+- **BOLA/IDOR**: Access resources of other users by incrementing IDs.
+  ```bash
+  GET /api/users/100/orders -> 200 OK
+  GET /api/users/101/orders -> If 200 OK = BOLA Vulnerability
+  ```
+- **Mass Assignment**: Over-assign fields during registration or profile updates.
+  ```json
+  POST /api/register
+  { "username": "hacker", "password": "123", "role": "admin", "isAdmin": true }
+  ```
+- **JWT Attacks**: Tamper with payloads, test `alg: none`, or brute-force weak secrets.
+  ```bash
+  python3 jwt_tool.py <token> -T   # tamper
+  python3 jwt_tool.py <token> -X a # alg confusion
+  hashcat -a 0 -m 16500 <jwt> wordlist.txt # crack
+  ```
+
+### Phase 5: Input Validation & Logic
+- **NoSQL Injection**: `{ "username": {"$gt": ""}, "password": {"$gt": ""} }`.
+- **Parameter Pollution**: `GET /api/transfer?amount=100&to=victim&to=attacker`.
+- **GraphQL**: Check for introspection `{"query": "{ __schema { types { name } } }"}` and batching attacks.
+
+### Top API Bugs by Impact
+| Bug | Impact | Frequency |
+|---|---|---|
+| BOLA/IDOR | Critical | Very High |
+| Broken Auth | Critical | High |
+| Mass Assignment | High | High |
+| No Rate Limiting | High | Very High |
+| SSRF via Webhook | Critical | Medium |
 
 ## Associative Trails
-APIs are the backbone of modern web apps and a primary attack surface for data breaches. This note exists to centralize discovery and exploitation techniques, challenging the common assumption that internal APIs don't need robust authentication.
+APIs are often built with the assumption that the client is trusted, leading to "over-returning" data and weak server-side validation. This note serves as the primary technical playbook for breaking those assumptions.
 
 ## Connections
 - [[Web Application Security (MOC)]]
-- [[Web Application Security (MOC)]]
+- [[What Leads to API Vulnerabilities]]
+- [[Parameters in API Enumeration]]
+- [[How to Know if an API Has Authentication]]
 
 ## Sources
 - redteam-complete-guide.md

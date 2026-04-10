@@ -49,8 +49,23 @@
 
 ## Recent Updates
 - [[Web Application Security (MOC)]] — 2026-04-10
+- [[Red Team Operational Security (OpSec)]] — 2026-04-10
+- [[C2 Infrastructure Hosting (Red Team)]] — 2026-04-10
+- [[VPN and Proxy Setup (Red Team)]] — 2026-04-10
+- [[WAF Bypass Techniques]] — 2026-04-10
+- [[API Endpoint Testing]] — 2026-04-10
+- [[CORS (Cross-Origin Resource Sharing)]] — 2026-04-10
 - [[Red Team Tools]] — 2026-04-10
 - [[Step-by-Step Web App Red Teaming]] — 2026-04-10
 - [[Parameters in API Enumeration]] — 2026-04-10
 - [[What Leads to API Vulnerabilities]] — 2026-04-10
 - [[How to Know if an API Has Authentication]] — 2026-04-10
+- [[DevOps Engineering (MOC)]] — 2026-04-10
+- [[Kubernetes (K8s) Architecture]] — 2026-04-10
+- [[Prometheus and Nagios (Monitoring)]] — 2026-04-10
+- [[Linux Systems (MOC)]] — 2026-04-10
+- [[Linux Architecture (Core)]] — 2026-04-10
+- [[Linux Boot Process]] — 2026-04-10
+- [[systemd (Service Control)]] — 2026-04-10
+- [[Linux Filesystem Hierarchy]] — 2026-04-10
+- [[Linux GUI and OS Layers]] — 2026-04-10

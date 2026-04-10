@@ -21,13 +21,16 @@ Layered system that separates user-level applications from hardware operations.
 5. **Hardware**: CPU, RAM, Disk, Network devices.
 
 ### The Linux Kernel
-The kernel is **monolithic** and responsible for:
-- **Process Scheduling**: Allocating CPU time.
-- **Memory Management**: Handling RAM and virtual memory.
-- **VFS (Virtual File System)**: Providing a unified interface for different filesystems.
-- **Device Drivers**: Communicating with hardware components.
-- **Networking Stack**: Managing TCP/IP and routing.
-- **Security**: Access control and authentication.
+The kernel is **monolithic** and responsible for the following subsystems:
+
+| Subsystem | Role |
+| :--- | :--- |
+| **Scheduler** | Allocates CPU time to tasks. |
+| **Memory Manager** | Handles RAM, virtual memory, and swap. |
+| **VFS (Virtual File System)** | Provides a unified interface for different filesystems. |
+| **Device Drivers** | Communicates with hardware components. |
+| **Networking Stack** | Manages TCP/IP handling and routing. |
+| **Security Module** | Handles access control and authentication. |
 
 ### Execution Flow
 ```
@@ -35,8 +38,24 @@ User → Shell → System Call → Kernel → Hardware/Memory → Output
 ```
 
 ### User Space vs. Kernel Space
-- **User Space**: Where applications run; limited hardware access; crashes only affect the app.
-- **Kernel Space**: Where the kernel and modules run; full hardware access; crashes can take down the entire system.
+| Aspect | User Space | Kernel Space |
+| :--- | :--- | :--- |
+| **Runs** | Applications & commands | Kernel + modules |
+| **Access** | Limited hardware access | Full hardware access |
+| **Memory** | Virtual memory only | Virtual + physical memory |
+| **Crash Effect** | Crashes the specific application | Can crash the entire OS |
+
+### Linux Boot Process (Simplified)
+```
+Hardware → BIOS/UEFI → GRUB → Kernel → init/systemd → Services → Login
+```
+
+| Stage | Task |
+| :--- | :--- |
+| **BIOS / UEFI** | Initialize hardware components. |
+| **GRUB** | Loads kernel and initramfs into memory. |
+| **Kernel** | Detects hardware and mounts root filesystem. |
+| **systemd (PID 1)** | Starts system services and user environment. |
 
 ## Associative Trails
 Understanding the core layers is crucial for system administration and high-performance development. This note exists to document the fundamental separation of concerns in the Linux OS, refining the understanding of how user commands eventually interact with physical hardware.

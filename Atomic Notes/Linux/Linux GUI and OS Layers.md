@@ -11,9 +11,9 @@ updated: 2026-04-10
 The layers of the graphical stack in Linux, including graphics drivers, display servers, window managers, and desktop environments.
 
 ## Details
-Graphical stack and user interface layers in Linux systems.
+The Linux graphical stack is a modular set of layers that transform application drawing instructions into physical pixels on a display.
 
-### The Linux GUI Stack
+### The Linux GUI Stack Hierarchy
 ```
 Hardware (GPU, Display)
 └── Kernel Graphics Drivers (DRM/KMS, Mesa, NVIDIA)
@@ -23,20 +23,52 @@ Hardware (GPU, Display)
                 └── Display Manager (DM / Login Manager)
 ```
 
-### Component Definitions
-- **Display Server / Protocol (X11 / Wayland)**: Handles display output, input devices, and rendering.
-- **Window Manager (WM)**: Controls window placement, borders, resizing, and workspace management (e.g., KWin, Mutter, i3).
-- **Desktop Environment (DE)**: A complete graphical suite including a WM, panels, menus, and system tools (e.g., KDE Plasma, GNOME, XFCE).
-- **Display Manager (DM)**: The graphical login screen (e.g., SDDM, GDM, LightDM).
+### Component Roles & Examples
+| Layer | Description | Examples |
+| :--- | :--- | :--- |
+| **Display Server** | Handles display output, input devices, and rendering communication. | X11, Wayland |
+| **Window Manager (WM)** | Controls window placement, borders, resizing, and workspaces. | KWin, Mutter, i3, Openbox |
+| **Desktop Environment (DE)** | Complete suite (WM + panels + menus + settings + system tools). | KDE Plasma, GNOME, XFCE, LXQt |
+| **Display Manager (DM)** | The graphical login screen and session selector. | SDDM, GDM, LightDM |
 
-### Display Servers: X11 vs. Wayland
-- **X11 (X.Org Server)**: The older client-server architecture (released in 1984); supports network transparency natively via SSH forwarding.
-- **Wayland**: The modern replacement (released in 2008) with a direct compositor model. It offers lower latency, smoother graphics, and improved security through input isolation.
+### Common Desktop Stacks
+| Desktop Environment | Window Manager | Display Manager |
+| :--- | :--- | :--- |
+| **KDE Plasma** | KWin | SDDM |
+| **GNOME** | Mutter | GDM |
+| **XFCE** | Xfwm4 | LightDM |
+| **LXQt** | Openbox | LightDM |
+| **i3 Minimal** | i3 WM | None / LightDM |
 
-### Support in Popular DEs
-- **GNOME**: Defaulting to Wayland.
-- **KDE Plasma**: Defaulting to Wayland on Plasma 6.
-- **XFCE/LXQt**: Still primarily X11 with ongoing experimental Wayland support.
+### Data Flow Logic
+```
+User → Display Manager (login) → Desktop Environment → Window Manager → Display Server → Kernel → GPU Hardware
+```
+
+### X11 vs. Wayland: Architectural Comparison
+| Feature | X11 (X.Org Server) | Wayland |
+| :--- | :--- | :--- |
+| **Architecture** | Client-Server (Indirect) | Direct Compositor Model |
+| **Rendering Path** | App → X Server → Compositor → Display | App → Compositor → Display |
+| **Security** | Weak isolation (keylogging possible) | Strong input isolation |
+| **Remote Access** | Native X forwarding via SSH | Requires RDP, VNC, or PipeWire |
+| **Performance** | Higher latency, screen tearing issues | Lower latency, no tearing, smoother |
+| **Crash Impact** | Whole display may freeze | Compositor can isolate issues |
+
+### Support in Popular Desktop Environments
+| DE / Environment | X11 | Wayland |
+| :--- | :--- | :--- |
+| **GNOME** | Supported | Default |
+| **KDE Plasma** | Supported | Default on Plasma 6 |
+| **XFCE** | Supported | Partial experimental |
+| **LXQt** | Supported | Partial |
+| **Hyprland / Sway** | No | Wayland-only |
+
+### Remote Access Comparison
+```
+X11     →   SSH -X forwarding works natively
+Wayland →   PipeWire/RDP/VNC required
+```
 
 ## Associative Trails
 Explains how Linux handles graphical output, from raw hardware to polished desktop environments. This note refines the general [[Linux Architecture (Core)]] by detailing the UI-specific layers and documents the industry transition from X11 to Wayland.

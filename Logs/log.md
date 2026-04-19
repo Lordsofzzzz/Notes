@@ -20,3 +20,7 @@
 [2026-04-19] ingest | PEN-200-notes.md (Recon, AV Evasion, PrivEsc, Tunneling)
 [2026-04-19] update | index.md
 [2026-04-19] lint | fixed broken links to Port Redirection and Tunneling
+[2026-04-19] ingest | PEN-200-notes.md (Web, Client-side, AMSI, AppLocker)
+[2026-04-19] ingest | PEN-100-notes.md (Linux, Windows, Networking basics)
+[2026-04-19] ingest | PEN-100-notes.md (Programming, Crypto, File Transfers, AD Basics)
+[2026-04-19] lint | vault-wide connectivity and structural audit passed

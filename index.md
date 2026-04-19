@@ -21,6 +21,13 @@
 - [[Password Attacks]] — Techniques for bypassing authentication via brute force and hash cracking.
 - [[Active Directory Authentication Attacks]] — Exploiting AD auth protocols (Kerberos, NTLM).
 - [[Active Directory Lateral Movement]] — Techniques for moving between systems in an AD environment.
+- [[Web Application Attacks]] — Exploiting common web vulnerabilities (XSS, SQLi, LFI).
+- [[Client-Side Attacks]] — Phishing and user-targeted delivery mechanisms.
+- [[Client-Side Code Execution]] — Advanced in-memory execution and obfuscation.
+- [[AMSI Bypass]] — Circumventing the Windows Antimalware Scan Interface.
+- [[AppLocker Bypasses]] — Evading application whitelisting policies.
+- [[Cryptography Fundamentals]] — Foundations of secure communication (Hashing, Encryption).
+- [[File Transfer Techniques]] — Methods for moving tools and data to/from targets.
 
 ## DevOps
 - [[DevOps Engineering (MOC)]] — Practices and tools for integrating development and operations.
@@ -39,15 +46,23 @@
 - [[systemd (Service Control)]] — Standard service manager for Linux.
 - [[Linux Filesystem Hierarchy]] — Standard layout of directories in Linux.
 - [[Linux GUI and OS Layers]] — Layers from the kernel to the user desktop environment.
+- [[Linux Command Line Basics]] — Foundational commands and filesystem navigation.
+- [[Linux System Administration Basics]] — User, permission, and process management.
+
+## Windows
+- [[Windows Command Line Essentials]] — Core CMD commands and system management.
+- [[Active Directory Basics]] — Foundational concepts of AD identity and access management.
 
 ## AWS
 - (No notes yet)
 
 ## Networking
-- (No notes yet)
+- [[Networking Fundamentals]] — Core models (OSI/TCP-IP) and protocols.
 
 ## Programming
-- (No notes yet)
+- [[Bash Scripting]] — Automation of Linux tasks using Bash.
+- [[Python Scripting]] — Custom tool development and network automation.
+- [[PowerShell Scripting]] — Windows-centric object-oriented automation.
 
 ## AI-LLM
 - (No notes yet)
@@ -56,6 +71,21 @@
 - (No notes yet)
 
 ## Recent Updates
+- [[Bash Scripting]] — 2026-04-19
+- [[Python Scripting]] — 2026-04-19
+- [[PowerShell Scripting]] — 2026-04-19
+- [[Cryptography Fundamentals]] — 2026-04-19
+- [[File Transfer Techniques]] — 2026-04-19
+- [[Active Directory Basics]] — 2026-04-19
+- [[Linux Command Line Basics]] — 2026-04-19
+- [[Linux System Administration Basics]] — 2026-04-19
+- [[Windows Command Line Essentials]] — 2026-04-19
+- [[Networking Fundamentals]] — 2026-04-19
+- [[Web Application Attacks]] — 2026-04-19
+- [[Client-Side Attacks]] — 2026-04-19
+- [[Client-Side Code Execution]] — 2026-04-19
+- [[AMSI Bypass]] — 2026-04-19
+- [[AppLocker Bypasses]] — 2026-04-19
 - [[Enumeration and Reconnaissance]] — 2026-04-19
 - [[Antivirus Evasion]] — 2026-04-19
 - [[Windows Privilege Escalation]] — 2026-04-19

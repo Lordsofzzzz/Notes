@@ -45,16 +45,19 @@ done
 
 ### Phase 4: Authentication & Authorization (BOLA/IDOR)
 - **BOLA/IDOR**: Access resources of other users by incrementing IDs.
+
   ```bash
   GET /api/users/100/orders -> 200 OK
   GET /api/users/101/orders -> If 200 OK = BOLA Vulnerability
   ```
 - **Mass Assignment**: Over-assign fields during registration or profile updates.
+
   ```json
   POST /api/register
   { "username": "hacker", "password": "123", "role": "admin", "isAdmin": true }
   ```
 - **JWT Attacks**: Tamper with payloads, test `alg: none`, or brute-force weak secrets.
+
   ```bash
   python3 jwt_tool.py <token> -T   # tamper
   python3 jwt_tool.py <token> -X a # alg confusion
@@ -67,13 +70,13 @@ done
 - **GraphQL**: Check for introspection `{"query": "{ __schema { types { name } } }"}` and batching attacks.
 
 ### Top API Bugs by Impact
-| Bug | Impact | Frequency |
-|---|---|---|
-| BOLA/IDOR | Critical | Very High |
-| Broken Auth | Critical | High |
-| Mass Assignment | High | High |
-| No Rate Limiting | High | Very High |
-| SSRF via Webhook | Critical | Medium |
+| Bug              | Impact   | Frequency |
+| ---------------- | -------- | --------- |
+| BOLA/IDOR        | Critical | Very High |
+| Broken Auth      | Critical | High      |
+| Mass Assignment  | High     | High      |
+| No Rate Limiting | High     | Very High |
+| SSRF via Webhook | Critical | Medium    |
 
 ## Associative Trails
 APIs are often built with the assumption that the client is trusted, leading to "over-returning" data and weak server-side validation. This note serves as the primary technical playbook for breaking those assumptions.

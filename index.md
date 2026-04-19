@@ -13,6 +13,14 @@
 - [[Parameters in API Enumeration]] — Discovering undocumented inputs.
 - [[What Leads to API Vulnerabilities]] — Root causes of API security flaws.
 - [[How to Know if an API Has Authentication]] — Fingerprinting auth layers.
+- [[Enumeration and Reconnaissance]] — Passive and active discovery methods.
+- [[Antivirus Evasion]] — Techniques for bypassing security software.
+- [[Windows Privilege Escalation]] — Gaining elevated access on Windows systems.
+- [[Linux Privilege Escalation]] — Gaining root access on Linux systems.
+- [[Port Redirection and Tunneling]] — Routing traffic through compromised hosts to internal networks.
+- [[Password Attacks]] — Techniques for bypassing authentication via brute force and hash cracking.
+- [[Active Directory Authentication Attacks]] — Exploiting AD auth protocols (Kerberos, NTLM).
+- [[Active Directory Lateral Movement]] — Techniques for moving between systems in an AD environment.
 
 ## DevOps
 - [[DevOps Engineering (MOC)]] — Practices and tools for integrating development and operations.
@@ -48,6 +56,14 @@
 - (No notes yet)
 
 ## Recent Updates
+- [[Enumeration and Reconnaissance]] — 2026-04-19
+- [[Antivirus Evasion]] — 2026-04-19
+- [[Windows Privilege Escalation]] — 2026-04-19
+- [[Linux Privilege Escalation]] — 2026-04-19
+- [[Port Redirection and Tunneling]] — 2026-04-19
+- [[Password Attacks]] — 2026-04-19
+- [[Active Directory Authentication Attacks]] — 2026-04-19
+- [[Active Directory Lateral Movement]] — 2026-04-19
 - [[Web Application Security (MOC)]] — 2026-04-10
 - [[Red Team Operational Security (OpSec)]] — 2026-04-10
 - [[C2 Infrastructure Hosting (Red Team)]] — 2026-04-10

@@ -4,12 +4,11 @@ tags: [linux, gui, desktop]
 created: 2026-04-10
 updated: 2026-04-10
 ---
-
+0
 # Linux GUI and OS Layers
 
 ## Summary
 The layers of the graphical stack in Linux, including graphics drivers, display servers, window managers, and desktop environments.
-
 ## Details
 The Linux graphical stack is a modular set of layers that transform application drawing instructions into physical pixels on a display.
 
